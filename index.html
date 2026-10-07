@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6ef">
+  <meta name="description" content="Lingua Quest，把英语练成日常的小冒险。三遍法听力、影子跟读、地图探索和蓝色小鸡陪伴，让每一次听说练习都有下一步。">
+  <title>Lingua Quest · 听懂一点，敢说一点</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="feedback-config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Lingua Quest 首页"><span class="brand-icon" aria-hidden="true">lq<span>✦</span></span><span>Lingua Quest<small>英语听说 · 日常冒险</small></span></a>
+    <nav aria-label="主导航"><a href="#method">怎么练</a><a href="#adventure">小冒险</a><a href="#courses">练什么</a><a href="#faq">常见问题</a><a class="nav-feedback" href="#feedback">提建议 ↗</a></nav>
+    <a class="button button-small" href="#demo">听一小段 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> A LITTLE PRACTICE. A LITTLE ADVENTURE.</p>
+        <h1>听懂一点，<br>敢说一点。<br><span class="hand-underline">每天向前一点。</span></h1>
+        <p class="hero-description">和一只蓝色小鸡一起，把英语练成日常的小冒险。<br class="desktop-break">听一段、说几句，再解锁下一段旅程。</p>
+        <div class="hero-actions"><a class="button" href="#demo">体验一段听力 <span aria-hidden="true">↗</span></a><a class="text-link" href="#method">看看怎么练 <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note"><span aria-hidden="true">✓</span> 听力 + 口语 <span aria-hidden="true">✓</span> 短练习，随时开始 <span aria-hidden="true">✓</span> 浏览器就能用</p>
+      </div>
+      <div class="hero-art" aria-label="蓝色小鸡与产品首页展示">
+        <img class="hero-landscape" src="assets/map-cet4.png" alt="" width="1536" height="1024" fetchpriority="high">
+        <img class="hero-keepsake" src="assets/card-back.png" alt="" width="480" height="720">
+        <span class="orbit orbit-one" aria-hidden="true"></span><span class="orbit orbit-two" aria-hidden="true"></span>
+        <span class="art-star star-one" aria-hidden="true">✧</span><span class="art-star star-two" aria-hidden="true">✦</span>
+        <div class="floating-label label-top"><span class="label-icon" aria-hidden="true">♪</span><div>从听见，到听懂<small>LISTEN · UNDERSTAND · REPEAT</small></div></div>
+        <div class="phone-frame"><div class="phone-speaker" aria-hidden="true"></div><img class="app-shot" src="assets/app-home.png" alt="Lingua Quest 首页：听力练习、口语练习、今日学习时长和地图图鉴入口" width="390" height="844" fetchpriority="high"></div>
+        <div class="mascot-hero"><img src="assets/pet-wave.png" alt="向你挥手的蓝色小鸡" width="552" height="754" fetchpriority="high"></div>
+        <div class="floating-label label-bottom"><span class="label-icon green" aria-hidden="true">✦</span><div>练习，也是一次探索<small>YOUR NEXT LITTLE QUEST</small></div></div>
+        <span class="hand-note">今天，也一起走一小步。</span>
+      </div>
+    </section>
+    <div class="promise-strip"><div class="wrap"><span><b>听</b> 找到句子里的意思</span><i aria-hidden="true">✦</i><span><b>说</b> 跟上声音的节奏</span><i aria-hidden="true">✦</i><span><b>探索</b> 留下自己的成长轨迹</span></div></div>
+
+    <section class="method wrap section-space" id="method">
+      <div class="section-heading"><p class="eyebrow">01 / LISTEN WITH A METHOD</p><h2>同一段声音，<br>每一遍都有新发现。</h2><p>先抓住意思，再听清细节，最后对照原文。<br>把「好像听懂了」变成一次有反馈的练习。</p></div>
+      <div class="method-layout" id="demo">
+        <div class="step-list" aria-label="选择听力演示阶段">
+          <button class="step active" type="button" data-stage="0" aria-pressed="true" aria-controls="demo-panel"><span class="step-number">01</span><span><strong>先听，不急着看答案</strong><small>完整听一遍，用理解题抓住内容。</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+          <button class="step" type="button" data-stage="1" aria-pressed="false" aria-controls="demo-panel"><span class="step-number">02</span><span><strong>再听，把句子拼回来</strong><small>通过词句练习，找到没听清的地方。</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+          <button class="step" type="button" data-stage="2" aria-pressed="false" aria-controls="demo-panel"><span class="step-number">03</span><span><strong>对照原文，听懂细节</strong><small>核对字幕和答案，再回听一次。</small></span><span class="step-arrow" aria-hidden="true">↗</span></button>
+          <p class="demo-caption">右侧可体验一个简化示例 <span aria-hidden="true">→</span></p>
+        </div>
+        <div class="demo-card" id="demo-panel">
+          <div class="demo-top"><span class="pill">听力小体验</span><span class="demo-counter" id="stage-counter">01 / 03</span></div>
+          <h3>图书馆，要换个新模样了。</h3><p class="demo-topic">Campus Library Renovation <span>· 四级路线首篇</span></p>
+          <div class="audio-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <audio id="sample-audio" controls preload="metadata" aria-label="播放图书馆改造听力原音"><source src="assets/listening-sample.mp3" type="audio/mpeg">你的浏览器不支持音频播放。<a href="assets/listening-sample.mp3">打开音频文件</a></audio>
+          <div id="stage-listen"><p class="demo-instruction">先听一听：图书馆将关闭多久？</p><div class="answer-options"><button type="button" data-answer="wrong">一个月</button><button type="button" data-answer="correct">一年</button><button type="button" data-answer="wrong">两年</button></div><p class="feedback" id="answer-feedback" role="status">点击播放，试着抓住这个信息。</p></div>
+          <div id="stage-order" hidden><p class="demo-instruction">点选词块，把首句拼回来。</p><div class="word-answer" id="word-answer" aria-label="已选择的词块"></div><div class="word-options" id="word-options"><button type="button">next year.</button><button type="button">will fix</button><button type="button">The city university</button><button type="button">its main library</button></div><div class="word-footer"><p class="feedback" id="word-feedback" role="status">听清主体、动作和时间。</p><button class="reset-button" id="reset-words" type="button">重来</button></div></div>
+          <div id="stage-transcript" hidden><blockquote lang="en">The city university will fix its main library next year. <mark>It will be closed for one year, starting next summer.</mark></blockquote><p class="translation">这所市立大学明年将修缮主图书馆。图书馆从明年夏天起将关闭一年。</p><p class="feedback">抓住关键信息，再听听它是怎么说的。</p></div>
+          <p class="demo-disclaimer">示例使用产品现有原音 · 此处展示部分练习流程</p>
+          <noscript><p>交互演示需要启用 JavaScript。你仍可播放原音并阅读下方产品介绍。</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="speaking-section section-space">
+      <div class="wrap speaking-layout">
+        <div class="speaking-art" aria-label="影子跟读功能示意">
+          <div class="speech-note"><span class="pill">SHADOWING / 影子跟读</span><p lang="en">A little practice.<br><span>A little more confidence.</span></p><div class="rhythm" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="speech-bottom"><span>跟着原音，找到自己的节奏</span><span class="mic-symbol" aria-hidden="true">♪</span></div></div>
+          <div class="voice-tag"><span aria-hidden="true">↺</span> 录下来，再听听自己</div><p class="illustration-note">功能示意</p>
+        </div>
+        <div class="section-heading"><p class="eyebrow">02 / FIND YOUR VOICE</p><h2>让耳朵带路，<br>让声音跟上。</h2><p>听过的材料，也可以拿来开口练。<br>从逐句跟读到影子跟读，慢慢靠近原音的节奏。</p><ul class="feature-list"><li><span>01</span><div><strong>逐句跟读</strong><p>看字幕、听原音，再用自己的声音说一遍。</p></div></li><li><span>02</span><div><strong>录音回放</strong><p>把自己的声音和原音对照，听见具体的差别。</p></div></li><li><span>03</span><div><strong>影子跟读</strong><p>选择合适的语速，练习连续表达与句子节奏。</p></div></li></ul></div>
+      </div>
+    </section>
+
+    <section class="adventure wrap section-space" id="adventure">
+      <div class="adventure-heading"><div class="section-heading"><p class="eyebrow">03 / MAKE PROGRESS FEEL LIKE PLAY</p><h2>下一站，<br>是更熟练的自己。</h2></div><p>有路线可走，有成长可看。<br>一次练习的结束，也可以是下一段冒险的开始。</p></div>
+      <div class="adventure-grid">
+        <article class="map-card"><div class="world-art"><img src="assets/map-ielts.png" alt="雅思地图原画：海岛、灯塔、石桥与蓝色海面" width="1536" height="1024" loading="lazy"><span class="world-art-tag">你的下一段旅程，藏在这里</span><a class="world-art-link" href="#courses">探索三张地图 <span aria-hidden="true">↗</span></a></div><div class="adventure-copy"><span class="card-label">EXPLORE</span><h3>一关一关，走出自己的路线</h3><p>选择材料，完成练习，查看星级与通关进度。<br>下一步在哪里，打开地图就知道。</p></div></article>
+        <article class="collection-card"><div class="collection-art product-collection"><div class="gallery-card gallery-rare"><div class="rare-item-art" role="img" aria-label="珍品时光机：带有星空表盘与蓝色能量管的金色机械怀表"></div><span>珍品 · 时光机</span></div><button class="flip-card" type="button" data-card-flip aria-label="查看卡牌正面" aria-pressed="false"><span class="flip-card-inner"><span class="flip-face flip-back"><img src="assets/card-back.png" alt="金色罗盘与绿叶纹样的产品卡背" width="480" height="720" loading="lazy"></span><span class="flip-face flip-front" aria-hidden="true"><img src="assets/zodiac-pisces.png" alt="产品图鉴双鱼座人物原画" width="572" height="687" loading="lazy"><span class="card-sign" aria-hidden="true">♓</span><span class="card-name">双鱼座 · 星座收藏</span></span></span></button><div class="gallery-card gallery-aries"><img src="assets/zodiac-aries.png" alt="产品图鉴白羊座人物原画" width="512" height="768" loading="lazy"><span>星座收藏</span></div><span class="flip-hint" id="flip-hint" aria-live="polite">点击卡背，翻开一份小惊喜 ↻</span></div><div class="adventure-copy"><span class="card-label">COLLECT</span><h3>把努力，变成看得见的收藏</h3><p>从练习中获得成长与奖励，逐步丰富图鉴。<br>给日复一日的坚持，留一点小纪念。</p></div></article>
+      </div><p class="illustration-note">地图、卡背与藏品均使用产品原画；此处为展示排版，翻卡不会发放产品奖励。</p>
+    </section>
+
+    <section class="courses-section section-space" id="courses"><div class="wrap">
+      <div class="adventure-heading"><div class="section-heading"><p class="eyebrow">04 / PICK YOUR NEXT QUEST</p><h2>三张地图，<br>把练习变成旅程。</h2></div><p>现有 <strong>300 篇原创听力材料</strong>，也用于跟读练习。<br>考试场景是一条选择，日常听说是持续的目标。</p></div>
+      <div class="course-grid illustrated-courses">
+        <article class="course-card"><div class="course-landscape"><img src="assets/map-cet4.png" alt="四级地图原画：绿意山谷中的图书馆、溪流与石桥" width="1536" height="1024" loading="lazy"><span class="landscape-label">01 / CET–4</span></div><div class="course-body"><div class="course-top"><span class="course-code">CET–4</span><span class="course-symbol" aria-hidden="true">↗</span></div><h3>从日常，听向更远处</h3><p>短新闻、对话与短文。<br>从校园、生活和社会话题练起。</p><div class="course-bottom"><span>四级场景路线</span><b>100 篇</b></div></div></article>
+        <article class="course-card"><div class="course-landscape"><img src="assets/map-cet6.png" alt="六级地图原画：暖色云海中的浮岛、天文台与拱桥" width="1536" height="1024" loading="lazy"><span class="landscape-label">02 / CET–6</span></div><div class="course-body"><div class="course-top"><span class="course-code">CET–6</span><span class="course-symbol" aria-hidden="true">≋</span></div><h3>听懂更完整的表达</h3><p>对话、短文与讲座。<br>练习较长内容中的信息和观点。</p><div class="course-bottom"><span>六级场景路线</span><b>100 篇</b></div></div></article>
+        <article class="course-card"><div class="course-landscape"><img src="assets/map-ielts.png" alt="雅思地图原画：碧蓝海面上的岛屿、图书馆与灯塔" width="1536" height="1024" loading="lazy"><span class="landscape-label">03 / IELTS</span></div><div class="course-body"><div class="course-top"><span class="course-code">IELTS</span><span class="course-symbol" aria-hidden="true">✳</span></div><h3>走进不同声音的世界</h3><p>生活场景、学术讨论与讲座。<br>接触不同口音，逐步挑战理解。</p><div class="course-bottom"><span>雅思场景路线</span><b>100 篇</b></div></div></article>
+      </div>
+      <p class="course-note">材料为原创场景练习，不是官方真题；课程内的档位与反馈不等同于考试成绩或语言能力认证。</p>
+      <div class="custom-material"><span class="custom-icon" aria-hidden="true">＋</span><div><h3>也可以，把自己的材料带进来。</h3><p>导入音频与英文文本，逐句对齐，用熟悉的内容练听力和影子跟读。</p></div><a class="text-link" href="#start">了解使用方式 <span aria-hidden="true">↗</span></a></div>
+    </div></section>
+
+    <section class="feedback-section section-space" id="feedback" aria-labelledby="feedback-title">
+      <div class="wrap feedback-layout">
+        <div class="feedback-copy section-heading">
+          <span class="feedback-badge"><span aria-hidden="true">✦</span> 一起把 Lingua Quest 变得更好</span>
+          <p class="eyebrow">05 / WE ARE ALL EARS</p>
+          <h2 id="feedback-title">你的声音，<br>也值得被听见。</h2>
+          <p>哪里用得不顺？还想练什么？<br>关于听说、地图或收藏，你的想法都可以告诉我们。</p>
+          <div class="feedback-companion"><img src="assets/pet-wave.png" alt="" width="552" height="754" loading="lazy"><span>好用的地方，<br>想改的地方，都想听听。</span></div>
+        </div>
+        <form class="feedback-form" id="feedback-form" data-receiver="2036702567@qq.com" aria-describedby="feedback-status">
+          <h3>留下一条建议</h3>
+          <label for="feedback-category">你想聊哪一方面？</label>
+          <select id="feedback-category" name="category"><option value="功能建议">功能建议</option><option value="使用问题">使用问题</option><option value="内容与材料">内容与材料</option><option value="视觉与体验">视觉与体验</option><option value="其他想法">其他想法</option></select>
+          <div class="feedback-label-row"><label for="feedback-message">你的意见 <span>必填</span></label><span id="feedback-count">0 / 2000</span></div>
+          <textarea id="feedback-message" name="message" rows="5" maxlength="2000" minlength="5" required placeholder="比如：希望跟读练习可以……；在手机上打开某个页面时……"></textarea>
+          <label for="feedback-contact">联系方式 <span>选填</span></label>
+          <input id="feedback-contact" name="contact" type="text" maxlength="120" autocomplete="off" placeholder="如果愿意收到回复，可以留邮箱或其他联系方式">
+          <div class="feedback-trap" aria-hidden="true"><label for="feedback-website">Website</label><input id="feedback-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="feedback-form-actions"><button class="button feedback-submit" id="feedback-submit" type="submit" disabled><span id="feedback-submit-label">发送建议</span><span aria-hidden="true">↗</span></button><button class="feedback-copy-button" id="feedback-copy" type="button">复制意见</button></div>
+          <p class="feedback-delivery">收件邮箱：<a href="mailto:2036702567@qq.com">2036702567@qq.com</a></p>
+          <p class="feedback-status" id="feedback-status" role="status">自动发送暂未开放。你可以复制意见，发到上面的 QQ 邮箱。</p>
+          <noscript><p class="feedback-status">此表单需要 JavaScript。你也可以直接向上述邮箱发送意见。</p></noscript>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq-section wrap section-space" id="faq"><div class="section-heading"><p class="eyebrow">A FEW THINGS TO KNOW</p><h2>开始之前，<br>你可能想知道。</h2><p>给第一次见面的你，一点实在的说明。</p></div><div class="faq-list"><details open><summary>我该从哪里开始？<span aria-hidden="true">＋</span></summary><p>先选一篇合适的听力材料，按「先听、再练、对照」完成一轮；想开口时，再用同一篇材料跟读。可以重练，按自己的节奏推进。</p></details><details><summary>需要安装 App 吗？<span aria-hidden="true">＋</span></summary><p>Lingua Quest 是移动端优先的 Web App，手机和电脑都可以通过浏览器访问。支持的浏览器还可把它添加到主屏幕；安装入口取决于浏览器与设备。</p></details><details><summary>学习记录会保存在哪里？<span aria-hidden="true">＋</span></summary><p>当前静态版将进度和收藏保存在使用该产品的浏览器里。刷新后可以继续，但不同设备之间不会自动同步；清除站点数据会删除本地存档。</p></details><details><summary>口语练习需要麦克风吗？评分是什么？<span aria-hidden="true">＋</span></summary><p>听原音不需要麦克风；录音跟读需要你允许浏览器使用麦克风。当前静态版提供浏览器本地反馈，语音识别可用性取决于浏览器。练习反馈用于辅助对比，不作为专业发音诊断或语言水平认证。</p></details><details><summary>这里的听力体验是完整产品吗？<span aria-hidden="true">＋</span></summary><p>这里是产品介绍页，只展示一段现有音频和简化练习。完整产品包含听力、口语、关卡地图、图鉴与个人学习记录。点击下方入口可以访问现有 Web App。</p></details></div></section>
+
+    <section class="start-section wrap" id="start"><div><p class="eyebrow">YOUR NEXT LITTLE ADVENTURE</p><h2>今天的第一步，<br>从一段声音开始。</h2><p>不必一次走很远。我们就从这一小段开始。</p><a class="button button-light" href="https://lingua-quest-4e0.pages.dev/" target="_blank" rel="noopener noreferrer">打开 Lingua Quest <span aria-hidden="true">↗</span></a><span class="start-note">前往现有 Web App · 在新标签页打开</span></div><div class="end-mascot"><img src="assets/pet-wave.png" alt="蓝色小鸡挥手邀请你开始练习" width="552" height="754" loading="lazy"><span>See you on the next quest!</span></div></section>
+  </main>
+  <a class="feedback-float" href="#feedback" aria-label="跳到意见反馈板块"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-5 3v-7a7.5 7.5 0 0 1 7.5-11h2A7.5 7.5 0 0 1 20 11.5Z"/><path d="M8 10h8M8 14h5"/></svg><span>提个建议</span><span aria-hidden="true">↗</span></a>
+  <footer class="site-footer wrap"><a class="footer-brand" href="#">Lingua Quest <span>听懂一点，敢说一点。</span></a><a href="#main">回到顶部 ↑</a><p>英语听说 · 每天一小步</p></footer>
+</body>
+</html>
